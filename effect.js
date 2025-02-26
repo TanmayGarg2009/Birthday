@@ -24,7 +24,7 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
-		$(this).fadeOut('fast').delay(3000).promise().done(function(){
+		$(this).fadeOut('fast').delay(2000).promise().done(function(){
 			$('#play').fadeIn('fast');
 		});
 	});
@@ -39,14 +39,14 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(4000).promise().done(function(){
-			$('#bannar_coming').fadeIn('slow');
+		$(this).fadeOut('fast').delay(3000).promise().done(function(){
+			$('#bannar_coming').fadeIn('fast');
 		});
 	});
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('fast').delay(5000).promise().done(function(){
+		$(this).fadeOut('fast').delay(3500).promise().done(function(){
 			$('#balloons_flying').fadeIn('fast');
 		});
 	});
