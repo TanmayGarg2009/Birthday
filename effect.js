@@ -173,9 +173,9 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('fast').delay(400).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('fast').delay(800).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('fast').delay(400);
+			$("p:nth-child("+i+")").fadeIn('fast').delay(600);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('fast').promise().done(function () {
 					$('.cake').fadeIn('fast');
