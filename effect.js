@@ -159,7 +159,7 @@ $('document').ready(function(){
 		$('#b77').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(4000);
-		$(this).fadeOut('fast').delay(3500).promise().done(function(){
+		$(this).fadeOut('fast').delay(5000).promise().done(function(){
 			$('#story').fadeIn('fast');
 		});
 	});
