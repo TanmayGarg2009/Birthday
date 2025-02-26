@@ -132,9 +132,9 @@ $('document').ready(function(){
 	});
 
 	$('#light_candle').click(function(){
-		$('.fuego').fadeIn('slow');
-		$(this).fadeOut('slow').promise().done(function(){
-			$('#wish_message').fadeIn('slow');
+		$('.fuego').fadeIn('fast');
+		$(this).fadeOut('fast').promise().done(function(){
+			$('#wish_message').fadeIn('fast');
 		});
 	});
 
@@ -159,15 +159,15 @@ $('document').ready(function(){
 		$('#b77').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
-			$('#story').fadeIn('slow');
+		$(this).fadeOut('fast').delay(3000).promise().done(function(){
+			$('#story').fadeIn('fast');
 		});
 	});
 	
 	$('#story').click(function(){
-		$(this).fadeOut('slow');
+		$(this).fadeOut('fast');
 		$('.cake').fadeOut('fast').promise().done(function(){
-			$('.message').fadeIn('slow');
+			$('.message').fadeIn('fast');
 		});
 		
 		var i;
