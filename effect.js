@@ -158,8 +158,8 @@ $('document').ready(function(){
 		$('#b66').animate({top:240, left: vw+150},500);
 		$('#b77').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
-		$('.balloons h2').fadeIn(3000);
-		$(this).fadeOut('fast').delay(2500).promise().done(function(){
+		$('.balloons h2').fadeIn(4000);
+		$(this).fadeOut('fast').delay(3500).promise().done(function(){
 			$('#story').fadeIn('fast');
 		});
 	});
