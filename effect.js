@@ -156,7 +156,7 @@ $('document').ready(function(){
 		$('#b77').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(4000);
-		$(this).fadeOut('slow').delay(10000).promise().done(function(){
+		$(this).fadeOut('slow').delay(500).promise().done(function(){
 			$('#story').fadeIn('slow');
 		});
 	});
@@ -164,7 +164,7 @@ $('document').ready(function(){
 	$('#story').click(function(){
 		$(this).fadeOut('slow');
 		$('.cake').fadeOut('slow').promise().done(function(){
-			$('.message').fadeIn('slow');
+			$('.message').fadeIn('slow').delay(1000);
 		});
 		
 		var i;
