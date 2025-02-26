@@ -165,17 +165,17 @@ $('document').ready(function(){
 	});
 	
 	$('#story').click(function(){
-		$(this).fadeOut('fast');
-		$('.cake').fadeOut('fast').promise().done(function(){
+		$(this).fadeOut('slow');
+		$('.cake').fadeOut('slow').promise().done(function(){
 			$('.message').fadeIn('fast');
 		});
 		
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('fast').delay(600).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('fast').delay(900).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('fast').delay(600);
+			$("p:nth-child("+i+")").fadeIn('fast').delay(900);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('fast').promise().done(function () {
 					$('.cake').fadeIn('fast');
