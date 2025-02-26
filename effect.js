@@ -159,7 +159,7 @@ $('document').ready(function(){
 		$('#b77').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(2000);
-		$(this).fadeOut('fast').delay(1000).promise().done(function(){
+		$(this).fadeOut('fast').delay(3000).promise().done(function(){
 			$('#story').fadeIn('fast');
 		});
 	});
@@ -173,9 +173,9 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('fast').delay(40).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('fast').delay(400).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('fast').delay(60);
+			$("p:nth-child("+i+")").fadeIn('fast').delay(400);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('fast').promise().done(function () {
 					$('.cake').fadeIn('fast');
