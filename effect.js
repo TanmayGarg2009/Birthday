@@ -131,7 +131,7 @@ $('document').ready(function(){
 	$('#light_candle').click(function(){
 		$('.fuego').fadeIn('fast');
 		$(this).fadeOut('fast').promise().done(function(){
-			$('#wish_message').fadeIn('fast');
+			$('#wish_message').fadeIn('slow');
 		});
 	});
 
@@ -155,8 +155,8 @@ $('document').ready(function(){
 		$('#b66').animate({top:240, left: vw+150},500);
 		$('#b77').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
-		$('.balloons h2').fadeIn(3000);
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$('.balloons h2').fadeIn(4000);
+		$(this).fadeOut('slow').delay(8000).promise().done(function(){
 			$('#story').fadeIn('slow');
 		});
 	});
